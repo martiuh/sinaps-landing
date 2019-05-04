@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "alias": "sinaps",
+  "builds": [
+    {
+      "src": "./dist/**",
+      "use": "@now/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "dist/$1"
+    }
+  ]
+}
